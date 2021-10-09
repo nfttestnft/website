@@ -1,0 +1,49 @@
+/* 
+    Created on : 08.10.2021, 16:50:03
+    Author     : Orc Kugil
+*/
+
+body {
+}
+
+nav {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+footer {
+    color: white;
+    font-size: 1.25em;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+}
+
+#btn-connect {
+    border-radius: 64px; 
+    padding: 30px; 
+    width: 300px; 
+    background-color: beige; 
+    font-size: 2em;
+}
+
+#btn-price {
+    border-radius: 16px; 
+    padding: 30px; 
+    width: 300px; 
+    background-color: #b4c678; 
+    font-size: 2em;
+}
