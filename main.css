@@ -12,6 +12,7 @@ nav {
 
 p {
     font-size: 1.25em;
+    text-align: justify;
 }
 
 h2 {
@@ -32,11 +33,52 @@ footer {
     font-size: 1.5em;
 }
 
+.accordion {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2em;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: white;
+    border-color: red;
+}
+
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 1em;
+  color: #999;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+}
+
 #btn-connect {
     border-radius: 64px; 
+    color: white;
     padding: 30px; 
-    width: 300px; 
-    background-color: beige; 
+    width: 400px; 
+    background-color: #b4c678; 
     font-size: 2em;
 }
 
