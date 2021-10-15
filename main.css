@@ -15,6 +15,10 @@ p {
     text-align: justify;
 }
 
+h1 {
+    margin-bottom: 50px;
+}
+
 h2 {
     margin-top: 30px;
 }
@@ -47,9 +51,28 @@ footer {
     transition: 0.4s;
 }
 
+.accordion-dark {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2em;
+    transition: 0.4s;
+}
+
 .active, .accordion:hover {
     background-color: white;
-    border-color: red;
+}
+
+.active-dark, .accordion-dark:hover {
+    background-color: #222;
+    color: white;
 }
 
 .accordion:after {
@@ -60,13 +83,35 @@ footer {
   margin-left: 5px;
 }
 
+.accordion-dark:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 1em;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
 .active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+.active-dark:after {
   content: "-"; /* Unicode character for "minus" sign (-) */
 }
 
 .panel {
     padding: 0 18px;
     background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+}
+
+.panel-dark {
+    padding: 0 18px;
+    background-color: #222;
+    color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
