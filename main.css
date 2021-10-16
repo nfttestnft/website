@@ -40,7 +40,7 @@ footer {
 .accordion {
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #eee;
+    background-color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -67,7 +67,7 @@ footer {
 }
 
 .active, .accordion:hover {
-    background-color: #eee;
+    background-color: white;
 }
 
 .active-dark, .accordion-dark:hover {
@@ -101,7 +101,7 @@ footer {
 
 .panel {
     padding: 0 18px;
-    background-color: #eee;
+    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
