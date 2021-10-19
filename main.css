@@ -100,12 +100,16 @@ footer {
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0 16px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     text-align: justify;
+}
+
+.panel p {
+    margin-top: 16px;
 }
 
 .panel-dark {
