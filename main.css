@@ -15,6 +15,11 @@ p {
     text-align: justify;
 }
 
+a, a:hover {
+      text-decoration: none;
+      color: #b4c678;
+}
+
 .card {
     background-color: #222;
     color: white;

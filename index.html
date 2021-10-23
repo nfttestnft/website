@@ -11,10 +11,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid fixed-top" style="background-color: #222;">
+    <div id="navigation" class="container-fluid fixed-top" style="background-color: #222; box-shadow: 0px 2px 5px -2px #ccc;">
         <div class="container p-0">
             <div class="row">
-                <div class="col-8">
+                <div class="col-10">
                     <!-- A grey horizontal navbar that becomes vertical on small screens -->
                     <nav class="navbar navbar-expand-lg">
 
@@ -23,28 +23,32 @@
                         <!-- Links -->
                         <ul class="navbar-nav">
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Start</a>
+                            <a class="nav-link" href="#start">Start</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Mint</a>
+                            <a class="nav-link" href="#social">Social</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Social</a>
+                            <a class="nav-link" href="#roadmap">Roadmap</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
                           </li>
                         </ul>
                     </nav>
                 </div>
 
-                <div class="col-4">
+                <div class="col-2">
                     <div class="row text-center mx-auto" style="height: 100%;">
                         <div class="col my-auto">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAeCAYAAABXNvynAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKLSURBVHgB1VjtcdswDIV8/R91gqoT1J2g7gRNJrA8Qd0JEk/QdoK4EySdwN5A7gTyBvYGKJ4IybROosAkvijvDuKJn08QQIAkMoKZU5GZyE+RjUgpck8RkP7XOq7QOZYi05g5kqEOMmEmxXeRXKv+iDwmSbL12rFoKpJ1THEU2Wu5k3FHfLjON9c+aF9J25qeChCBBtnhIHKndb6WDxyPQueFtqciv1TrrOUtxUInqslg8vwZBIewYaeMNZ9/VGolm3lfXFyIZBfK1loPVsL3PB7M2vyStnalKGk8gHPf+BWTVocZjQtw8DNbbhOO99DLAmSXfkVDWO0lo/Hhm//ia3hO48TUdz6f8DWNFw23irB+gW2jfh00ZlFrOEa7O5GvIu9FPor8IJcnDOE3xsk2ha30M7mcxAoEsw/NG7vwaEHJHSGTz0N5F+66WLDLI6xY+gOtyHs0EFq8DIxBymoN/VUqO+GO8BfAY6Bt11P/r28AUk1yqaUFMzxgwzEJ9FWg7alOa7F/AHacgnBGdtwE2r701XNPqsgud5mRHVmMw1X2qIu0F56zwf5aY2C/DxyHPJFHQXFmsSe3RcFmoTnskblx3EpLrDenuHWBBQgfaNxBw8cKNvxWyALpO3JeGiK9Jpfow6kyugzAAWaGXWgZ6Hc10Y4h5CIwG4TjhciWXg5bnRch/hOFyQJ/a2/dGDy0ZI107A6qOEnjpFuwHSW7iJjrupBbtkW7au3mTMcu3ltOHHvquPRgd4OTeuL3hxw1slVKkgKn4ikN+xDGLuqLG2otmhm0XXLHXhwLdncRIdSXN8ObAp9uZIpLkA2QPvDpzq2TqOVuDQPrX7eXX7OjFwSfDg+4d9sP9f8PyeFiIL1vK+EAAAAASUVORK5CYII=">
+                            <a href="https://discord.gg/TFtEDamTcC" target="_blank">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAeCAYAAABXNvynAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKLSURBVHgB1VjtcdswDIV8/R91gqoT1J2g7gRNJrA8Qd0JEk/QdoK4EySdwN5A7gTyBvYGKJ4IybROosAkvijvDuKJn08QQIAkMoKZU5GZyE+RjUgpck8RkP7XOq7QOZYi05g5kqEOMmEmxXeRXKv+iDwmSbL12rFoKpJ1THEU2Wu5k3FHfLjON9c+aF9J25qeChCBBtnhIHKndb6WDxyPQueFtqciv1TrrOUtxUInqslg8vwZBIewYaeMNZ9/VGolm3lfXFyIZBfK1loPVsL3PB7M2vyStnalKGk8gHPf+BWTVocZjQtw8DNbbhOO99DLAmSXfkVDWO0lo/Hhm//ia3hO48TUdz6f8DWNFw23irB+gW2jfh00ZlFrOEa7O5GvIu9FPor8IJcnDOE3xsk2ha30M7mcxAoEsw/NG7vwaEHJHSGTz0N5F+66WLDLI6xY+gOtyHs0EFq8DIxBymoN/VUqO+GO8BfAY6Bt11P/r28AUk1yqaUFMzxgwzEJ9FWg7alOa7F/AHacgnBGdtwE2r701XNPqsgud5mRHVmMw1X2qIu0F56zwf5aY2C/DxyHPJFHQXFmsSe3RcFmoTnskblx3EpLrDenuHWBBQgfaNxBw8cKNvxWyALpO3JeGiK9Jpfow6kyugzAAWaGXWgZ6Hc10Y4h5CIwG4TjhciWXg5bnRch/hOFyQJ/a2/dGDy0ZI107A6qOEnjpFuwHSW7iJjrupBbtkW7au3mTMcu3ltOHHvquPRgd4OTeuL3hxw1slVKkgKn4ikN+xDGLuqLG2otmhm0XXLHXhwLdncRIdSXN8ObAp9uZIpLkA2QPvDpzq2TqOVuDQPrX7eXX7OjFwSfDg+4d9sP9f8PyeFiIL1vK+EAAAAASUVORK5CYII=">
+                            </a>
                         </div>
                         <div class="col my-auto">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAfCAYAAAB6Q+RGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHbSURBVHgBxZj7VcIwFMZve/xfR6gb6AY4gbgBbsAGhQmoE4ATlA3aDYoTpBuAE3zemBRiJNBHaH7nfKclj8vXPEouRDcGwAMrZRWsPRR7/XnGSi70TWR/d4Efg6lhzIWQZq2HmuiHyO2AsnHly6j+ki7kWnvDfGIGnBmNK1yYgpYGVxiGaDwcvfBN5mrUw2CCYQioQUuhZmPeBN44OqTUEe6zhj8WZuD5hYYCxsJuYVLAD3M78KRFJ9HGLIYjN87EFbzoEGTNmuLMmwDDEXbMyAie8KVidX0F7Vg160tfVz1i/IkXRdGzs1aPTmgK21eszcktn+sReGMdKBzfdsGdvtasqVZodnZBbFSEHD2T0i74NckLVRr8oPAc2EtpF8bGfUZq2kOyPVd4NKlH84XCGv1s1QrqPLfB+AiXp9hRviA1qlsaj6WrIrILoH55nE91I2pebo+uyn8jyY1rGn+nv1MfoE7oY5BRXzDOBqrIB1BnzRz+ERiYS7kMy1PStRQ1jEGcEnwfBgtvBnFK0leezEl6bZIIKp+QqlkJ6571pOXrH42StTx3eGgN1KG3gH8KuJKqAWZlYi9fOwL9kUsj82kuIrfhZspfSU17otVwMCQPzTIRK3lKd+SZH+sgQYLyPhdQAAAAAElFTkSuQmCC">
-                        </div>
-                        <div class="col my-auto">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAYCAYAAAB0kZQKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBrVaBccMgDJQ7gTcoI2QEj9ANkg0yQtoN2gncEdIJyAYdAW+QbqBCKxzCISSI/87HHbyU5xFBgIivqMMEjfAxB0VeF8mfCrKFRoQYIee3/0wkjzQhYWoQsBNyhY2PeVAQ4oRAtRueOwu5nnvVo8YNzzGKPKuIpyz+B2ScNuIAJ0KDSeGGtK4SsfjvAjzYnXqBBz8YIZ5HcpYu7BY7agNvxS3FszWxYhiGCzS6QcIMxS2ghFQTb5W1Um0cafyAXqTHkczZiqWWi0X5msrHkUDrxknBl1FyguZtzY0k7or0FuDGTki7m+DmwtkX9AKPgHOC1izKMIVcmzkRIJ31V68LahGK/4136ETr28G5sZDITUTsaQznuc/JFTceu5YR/kePWeGE67Yr8PI3wWHeIUFbYcaAF4a43vuMbxPOXFgfUb5N8yoe/7upa4XsciF474YpOKDpVxFjo4tyX/lHZtw4F+Y1+e5y/wJTZnwqzlnhvgAAAABJRU5ErkJggg==">
+                            <a href="https://twitter.com/OrcsOfOrakion" target="_blank">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAfCAYAAAB6Q+RGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHbSURBVHgBxZj7VcIwFMZve/xfR6gb6AY4gbgBbsAGhQmoE4ATlA3aDYoTpBuAE3zemBRiJNBHaH7nfKclj8vXPEouRDcGwAMrZRWsPRR7/XnGSi70TWR/d4Efg6lhzIWQZq2HmuiHyO2AsnHly6j+ki7kWnvDfGIGnBmNK1yYgpYGVxiGaDwcvfBN5mrUw2CCYQioQUuhZmPeBN44OqTUEe6zhj8WZuD5hYYCxsJuYVLAD3M78KRFJ9HGLIYjN87EFbzoEGTNmuLMmwDDEXbMyAie8KVidX0F7Vg160tfVz1i/IkXRdGzs1aPTmgK21eszcktn+sReGMdKBzfdsGdvtasqVZodnZBbFSEHD2T0i74NckLVRr8oPAc2EtpF8bGfUZq2kOyPVd4NKlH84XCGv1s1QrqPLfB+AiXp9hRviA1qlsaj6WrIrILoH55nE91I2pebo+uyn8jyY1rGn+nv1MfoE7oY5BRXzDOBqrIB1BnzRz+ERiYS7kMy1PStRQ1jEGcEnwfBgtvBnFK0leezEl6bZIIKp+QqlkJ6571pOXrH42StTx3eGgN1KG3gH8KuJKqAWZlYi9fOwL9kUsj82kuIrfhZspfSU17otVwMCQPzTIRK3lKd+SZH+sgQYLyPhdQAAAAAElFTkSuQmCC">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -66,14 +70,14 @@
             <div class="container" style="margin-top: -10px;">
                 <div class="row">
                     <div class="col text-center">
-                        <button id="btn-connect" type="button" class="btn btn-lg text-uppercase font-weight-bolder">Connect</button>
+                        <button id="btn-connect" type="button" class="btn btn-lg text-uppercase font-weight-bolder">Coming soon</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container-fluid" style="background-color: #222; padding-top: 100px; padding-bottom: 120px;">
+    <div id="start" class="container-fluid" style="background-color: #222; padding-top: 100px; padding-bottom: 120px;">
         <div class="container p-0">
             <div class="row">
                 <div class="col">
@@ -94,7 +98,7 @@
         </div>
     </div>
     
-    <div class="container-fluid" style="background-color: #eee; padding-top: 100px; padding-bottom: 200px;">
+    <div id="social" class="container-fluid" style="background-color: #eee; padding-top: 100px; padding-bottom: 200px;">
         <div class="container">
             <h1>One tribe, one adventure!</h1>
             <p>
@@ -180,7 +184,7 @@
         </div>
     </div>
     
-    <div class="container-fluid" style="background-color: #222; color: white; padding-top: 100px; padding-bottom: 200px;">
+    <div id="roadmap" class="container-fluid" style="background-color: #222; color: white; padding-top: 100px; padding-bottom: 200px;">
         <div class="container p-0">
             <h1 class="text-center">Roadmap</h1>
             
@@ -229,7 +233,7 @@
         </div>
     </div>
     
-    <div class="container-fluid" style="background-color: #eee; padding-top: 100px; padding-bottom: 200px;">
+    <div id="team" class="container-fluid" style="background-color: #eee; padding-top: 100px; padding-bottom: 200px;">
         <div class="container p-0">
             <h1 class="text-center">The Team</h1>
             
@@ -321,14 +325,15 @@
                     </div>
                     <div class="col">
                         <div class="row">
-                            <div class="col">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAeCAYAAABXNvynAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKLSURBVHgB1VjtcdswDIV8/R91gqoT1J2g7gRNJrA8Qd0JEk/QdoK4EySdwN5A7gTyBvYGKJ4IybROosAkvijvDuKJn08QQIAkMoKZU5GZyE+RjUgpck8RkP7XOq7QOZYi05g5kqEOMmEmxXeRXKv+iDwmSbL12rFoKpJ1THEU2Wu5k3FHfLjON9c+aF9J25qeChCBBtnhIHKndb6WDxyPQueFtqciv1TrrOUtxUInqslg8vwZBIewYaeMNZ9/VGolm3lfXFyIZBfK1loPVsL3PB7M2vyStnalKGk8gHPf+BWTVocZjQtw8DNbbhOO99DLAmSXfkVDWO0lo/Hhm//ia3hO48TUdz6f8DWNFw23irB+gW2jfh00ZlFrOEa7O5GvIu9FPor8IJcnDOE3xsk2ha30M7mcxAoEsw/NG7vwaEHJHSGTz0N5F+66WLDLI6xY+gOtyHs0EFq8DIxBymoN/VUqO+GO8BfAY6Bt11P/r28AUk1yqaUFMzxgwzEJ9FWg7alOa7F/AHacgnBGdtwE2r701XNPqsgud5mRHVmMw1X2qIu0F56zwf5aY2C/DxyHPJFHQXFmsSe3RcFmoTnskblx3EpLrDenuHWBBQgfaNxBw8cKNvxWyALpO3JeGiK9Jpfow6kyugzAAWaGXWgZ6Hc10Y4h5CIwG4TjhciWXg5bnRch/hOFyQJ/a2/dGDy0ZI107A6qOEnjpFuwHSW7iJjrupBbtkW7au3mTMcu3ltOHHvquPRgd4OTeuL3hxw1slVKkgKn4ikN+xDGLuqLG2otmhm0XXLHXhwLdncRIdSXN8ObAp9uZIpLkA2QPvDpzq2TqOVuDQPrX7eXX7OjFwSfDg+4d9sP9f8PyeFiIL1vK+EAAAAASUVORK5CYII=">
+                            <div class="col text-center">
+                                <a href="https://discord.gg/TFtEDamTcC" target="_blank">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAeCAYAAABXNvynAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKLSURBVHgB1VjtcdswDIV8/R91gqoT1J2g7gRNJrA8Qd0JEk/QdoK4EySdwN5A7gTyBvYGKJ4IybROosAkvijvDuKJn08QQIAkMoKZU5GZyE+RjUgpck8RkP7XOq7QOZYi05g5kqEOMmEmxXeRXKv+iDwmSbL12rFoKpJ1THEU2Wu5k3FHfLjON9c+aF9J25qeChCBBtnhIHKndb6WDxyPQueFtqciv1TrrOUtxUInqslg8vwZBIewYaeMNZ9/VGolm3lfXFyIZBfK1loPVsL3PB7M2vyStnalKGk8gHPf+BWTVocZjQtw8DNbbhOO99DLAmSXfkVDWO0lo/Hhm//ia3hO48TUdz6f8DWNFw23irB+gW2jfh00ZlFrOEa7O5GvIu9FPor8IJcnDOE3xsk2ha30M7mcxAoEsw/NG7vwaEHJHSGTz0N5F+66WLDLI6xY+gOtyHs0EFq8DIxBymoN/VUqO+GO8BfAY6Bt11P/r28AUk1yqaUFMzxgwzEJ9FWg7alOa7F/AHacgnBGdtwE2r701XNPqsgud5mRHVmMw1X2qIu0F56zwf5aY2C/DxyHPJFHQXFmsSe3RcFmoTnskblx3EpLrDenuHWBBQgfaNxBw8cKNvxWyALpO3JeGiK9Jpfow6kyugzAAWaGXWgZ6Hc10Y4h5CIwG4TjhciWXg5bnRch/hOFyQJ/a2/dGDy0ZI107A6qOEnjpFuwHSW7iJjrupBbtkW7au3mTMcu3ltOHHvquPRgd4OTeuL3hxw1slVKkgKn4ikN+xDGLuqLG2otmhm0XXLHXhwLdncRIdSXN8ObAp9uZIpLkA2QPvDpzq2TqOVuDQPrX7eXX7OjFwSfDg+4d9sP9f8PyeFiIL1vK+EAAAAASUVORK5CYII=">
+                                </a>
                             </div>
                             <div class="col">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAfCAYAAAB6Q+RGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHbSURBVHgBxZj7VcIwFMZve/xfR6gb6AY4gbgBbsAGhQmoE4ATlA3aDYoTpBuAE3zemBRiJNBHaH7nfKclj8vXPEouRDcGwAMrZRWsPRR7/XnGSi70TWR/d4Efg6lhzIWQZq2HmuiHyO2AsnHly6j+ki7kWnvDfGIGnBmNK1yYgpYGVxiGaDwcvfBN5mrUw2CCYQioQUuhZmPeBN44OqTUEe6zhj8WZuD5hYYCxsJuYVLAD3M78KRFJ9HGLIYjN87EFbzoEGTNmuLMmwDDEXbMyAie8KVidX0F7Vg160tfVz1i/IkXRdGzs1aPTmgK21eszcktn+sReGMdKBzfdsGdvtasqVZodnZBbFSEHD2T0i74NckLVRr8oPAc2EtpF8bGfUZq2kOyPVd4NKlH84XCGv1s1QrqPLfB+AiXp9hRviA1qlsaj6WrIrILoH55nE91I2pebo+uyn8jyY1rGn+nv1MfoE7oY5BRXzDOBqrIB1BnzRz+ERiYS7kMy1PStRQ1jEGcEnwfBgtvBnFK0leezEl6bZIIKp+QqlkJ6571pOXrH42StTx3eGgN1KG3gH8KuJKqAWZlYi9fOwL9kUsj82kuIrfhZspfSU17otVwMCQPzTIRK3lKd+SZH+sgQYLyPhdQAAAAAElFTkSuQmCC">
-                            </div>
-                            <div class="col">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAYCAYAAAB0kZQKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBrVaBccMgDJQ7gTcoI2QEj9ANkg0yQtoN2gncEdIJyAYdAW+QbqBCKxzCISSI/87HHbyU5xFBgIivqMMEjfAxB0VeF8mfCrKFRoQYIee3/0wkjzQhYWoQsBNyhY2PeVAQ4oRAtRueOwu5nnvVo8YNzzGKPKuIpyz+B2ScNuIAJ0KDSeGGtK4SsfjvAjzYnXqBBz8YIZ5HcpYu7BY7agNvxS3FszWxYhiGCzS6QcIMxS2ghFQTb5W1Um0cafyAXqTHkczZiqWWi0X5msrHkUDrxknBl1FyguZtzY0k7or0FuDGTki7m+DmwtkX9AKPgHOC1izKMIVcmzkRIJ31V68LahGK/4136ETr28G5sZDITUTsaQznuc/JFTceu5YR/kePWeGE67Yr8PI3wWHeIUFbYcaAF4a43vuMbxPOXFgfUb5N8yoe/7upa4XsciF474YpOKDpVxFjo4tyX/lHZtw4F+Y1+e5y/wJTZnwqzlnhvgAAAABJRU5ErkJggg==">
+                                <a href="https://twitter.com/OrcsOfOrakion" target="_blank">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAfCAYAAAB6Q+RGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHbSURBVHgBxZj7VcIwFMZve/xfR6gb6AY4gbgBbsAGhQmoE4ATlA3aDYoTpBuAE3zemBRiJNBHaH7nfKclj8vXPEouRDcGwAMrZRWsPRR7/XnGSi70TWR/d4Efg6lhzIWQZq2HmuiHyO2AsnHly6j+ki7kWnvDfGIGnBmNK1yYgpYGVxiGaDwcvfBN5mrUw2CCYQioQUuhZmPeBN44OqTUEe6zhj8WZuD5hYYCxsJuYVLAD3M78KRFJ9HGLIYjN87EFbzoEGTNmuLMmwDDEXbMyAie8KVidX0F7Vg160tfVz1i/IkXRdGzs1aPTmgK21eszcktn+sReGMdKBzfdsGdvtasqVZodnZBbFSEHD2T0i74NckLVRr8oPAc2EtpF8bGfUZq2kOyPVd4NKlH84XCGv1s1QrqPLfB+AiXp9hRviA1qlsaj6WrIrILoH55nE91I2pebo+uyn8jyY1rGn+nv1MfoE7oY5BRXzDOBqrIB1BnzRz+ERiYS7kMy1PStRQ1jEGcEnwfBgtvBnFK0leezEl6bZIIKp+QqlkJ6571pOXrH42StTx3eGgN1KG3gH8KuJKqAWZlYi9fOwL9kUsj82kuIrfhZspfSU17otVwMCQPzTIRK3lKd+SZH+sgQYLyPhdQAAAAAElFTkSuQmCC">
+                                </a>
                             </div>
                         </div>
                     </div>
