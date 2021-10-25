@@ -3,6 +3,9 @@
     Author     : Orc Kugil
 */
 
+@font-face { font-family: Orcish; src: url('font/Norse-KaWl.otf'); } 
+@font-face { font-family: OrcishB; font-weight: bold; src: url('font/NorseBold-2Kge.otf');}
+
 body {
 }
 
@@ -37,6 +40,8 @@ a, a:hover {
 
 h1 {
     margin-bottom: 50px;
+    font-family: OrcishB;
+    font-size: 4em;
 }
 
 h2 {
