@@ -5,6 +5,7 @@
 
 @font-face { font-family: Orcish; src: url('font/Norse-KaWl.otf'); } 
 @font-face { font-family: OrcishB; font-weight: bold; src: url('font/NorseBold-2Kge.otf');}
+@font-face { font-family: old-english-text-mt-regular; src: url('font/OLD.ttf');}
 
 body {
 }
@@ -40,7 +41,7 @@ a, a:hover {
 
 h1 {
     margin-bottom: 50px;
-    font-family: OrcishB;
+    font-family: old-english-text-mt-regular, sans-serif;
     font-size: 4em;
 }
 
@@ -157,4 +158,21 @@ footer {
     padding: 30px 100px;
     background-color: #b4c678; 
     font-size: 2.5em;
+}
+
+#open-text {
+    font-size: 1em;
+}
+
+#time-text {
+    font-size: 0.5em;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-size: 3em;
+    font-family: old-english-text-mt-regular, sans-serif;
+}
+
+#countdown {
+    font-size: 3em;
 }
