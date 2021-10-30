@@ -1,0 +1,178 @@
+/* 
+    Created on : 08.10.2021, 16:50:03
+    Author     : Orc Kugil
+*/
+
+@font-face { font-family: Orcish; src: url('font/Norse-KaWl.otf'); } 
+@font-face { font-family: OrcishB; font-weight: bold; src: url('font/NorseBold-2Kge.otf');}
+@font-face { font-family: old-english-text-mt-regular; src: url('font/OLD.ttf');}
+
+body {
+}
+
+nav {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+a, a:hover {
+      text-decoration: none;
+      color: #b4c678;
+}
+
+.card {
+    background-color: #222;
+    color: white;
+    border: 1px solid #aaa;
+}
+
+.card-title, .card-text {
+    text-align: center;
+}
+
+.card-img-top {
+    max-width: 350px; 
+    max-height: 350px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-family: old-english-text-mt-regular, sans-serif;
+    font-size: 4em;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+footer {
+    color: white;
+    font-size: 1.25em;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+}
+
+.accordion {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2em;
+    transition: 0.4s;
+}
+
+.accordion-dark {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2em;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: white;
+}
+
+.active-dark, .accordion-dark:hover {
+    background-color: #222;
+    color: white;
+}
+
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 1em;
+  color: #999;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion-dark:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 1em;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+.active-dark:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+    padding: 0 16px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+}
+
+.panel p {
+    margin-top: 16px;
+}
+
+.panel-dark {
+    padding: 0 18px;
+    background-color: #222;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+}
+
+#btn-connect {
+    border-radius: 100px; 
+    color: white;
+    padding: 30px 100px;
+    background-color: #b4c678; 
+    font-size: 2.5em;
+}
+
+#open-text {
+    font-size: 1em;
+}
+
+#time-text {
+    font-size: 0.5em;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-size: 3em;
+    font-family: old-english-text-mt-regular, sans-serif;
+}
+
+#countdown {
+    font-size: 3em;
+}
