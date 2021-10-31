@@ -21,7 +21,7 @@ ethereum
 // Note that this event is emitted on page load.
 // If the array of accounts is non-empty, you're already
 // connected.
-ethereum.on('accountsChanged', handleAccountsChanged)
+ethereum.on('accountsChanged', handleAccountsChanged);
 
 // For now, 'eth_accounts' will continue to always return an array
 function handleAccountsChanged (accounts) {
@@ -33,9 +33,13 @@ function handleAccountsChanged (accounts) {
         console.log('Please connect to MetaMask.');
         currentAccount = "0x0";
     } else if (accounts[0] !== currentAccount) {
-        currentAccount = accounts[0]
+        currentAccount = accounts[0];
         // Run any other necessary logic...
         console.log("New Address: " + currentAccount);
+        
+        // show minting button
+        $('#connect').hide();
+        $('#mint').show();
     } else {		
     }
 }  
@@ -54,9 +58,9 @@ function handleAccountsChanged (accounts) {
 document.getElementById('btn-connect').addEventListener("click", connect);
 
 function connect() {
-	console.log("Connect button clicked");
+    console.log("Connect button clicked");
 
-	ethereum
+    ethereum
     .request({ method: 'eth_requestAccounts' })
 	//.then(function(result) {console.log(result)})
     .catch((err) => {
