@@ -83,8 +83,14 @@ function mint() {
     console.log("Mint button clicked");
     var amount = 1;
     
+    // or sending and using a promise
+    contract.methods.mint(amount).send({from: currentAccount})
+    .then(function(receipt){
+        // receipt can also be a new contract instance, when coming from a "contract.deploy({...}).send()"
+    });
+    
     // Contract Mint Function
-    contract.mint(amount, {value: 1000000000000000}, function(error, result) {
+    /*contract.mint(amount, {value: 1000000000000000}, function(error, result) {
         if (!error) {
             console.log("Minting NFT");
             // show button spinner
@@ -92,5 +98,5 @@ function mint() {
         } else {
             console.log(error);
         }
-    });
+    });*/
 }
