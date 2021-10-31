@@ -14,6 +14,30 @@ ethereum
   });
   
   
+// Note that this event is emitted on page load.
+// If the array of accounts is non-empty, you're already
+// connected.
+ethereum.on('accountsChanged', handleAccountsChanged)
+
+// For now, 'eth_accounts' will continue to always return an array
+function handleAccountsChanged (accounts) {
+    console.log("Account changed");
+    console.log("Current address: " + currentAccount);
+
+    if (accounts.length === 0) {
+        // MetaMask is locked or the user has not connected any accounts
+        console.log('Please connect to MetaMask.');
+        currentAccount = "0x0";
+    } else if (accounts[0] !== currentAccount) {
+        currentAccount = accounts[0]
+        // Run any other necessary logic...
+        console.log("New Address: " + currentAccount);
+    } else {		
+    }
+}  
+  
+  
+  
 /***********************************/
 /* Handle connecting, per EIP 1102 */
 /***********************************/
