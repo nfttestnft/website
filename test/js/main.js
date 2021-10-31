@@ -32,6 +32,10 @@ function handleAccountsChanged (accounts) {
         // MetaMask is locked or the user has not connected any accounts
         console.log('Please connect to MetaMask.');
         currentAccount = "0x0";
+        
+        // show connect button
+        $('#mint').hide();
+        $('#connect').show();
     } else if (accounts[0] !== currentAccount) {
         currentAccount = accounts[0];
         // Run any other necessary logic...
