@@ -87,7 +87,7 @@ function mint() {
     var amount = 1;
     
     // Contract Mint Function
-    contract.mint(amount, function(error, result) {
+    contract.mint(amount, {value: 1000000000000000}, function(error, result) {
         if (!error) {
             console.log("Minting NFT");
             // show button spinner
