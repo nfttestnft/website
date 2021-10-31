@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="main.css" rel="stylesheet" type="text/css"/>
     
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -370,6 +371,18 @@
             </footer>
         </div>
     </div>
+    
+    <script>
+        // Running on the page, in the browser
+        if (typeof window.ethereum !== 'undefined') {
+            console.log('MetaMask is installed!');
+            web3 = new Web3("https://ropsten.infura.io/v3/f5cd3e76211e43799e0ab59d6b4dc61b");
+        } else {
+            // get Ethereum Provider
+            console.log('No Web3 Detected... using HTTP Provider');
+            window.web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/f5cd3e76211e43799e0ab59d6b4dc61b"));
+        }
+    </script>
     
     <script>
         var acc = document.getElementsByClassName("accordion");
