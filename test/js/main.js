@@ -60,6 +60,7 @@ function handleAccountsChanged (accounts) {
 // If you can't retrieve the user's account(s), you should encourage the user
 // to initiate a connection attempt.
 document.getElementById('btn-connect').addEventListener("click", connect);
+document.getElementById('btn-mint').addEventListener("click", mint);
 
 function connect() {
     console.log("Connect button clicked");
@@ -76,4 +77,8 @@ function connect() {
         console.error(err);
       }
     });
+}
+
+function mint() {
+    console.log("Mint button clicked");
 }
