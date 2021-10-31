@@ -155,6 +155,7 @@ footer {
 #btn-connect {
     border-radius: 100px; 
     color: white;
+    min-width: 400px;
     padding: 30px 100px;
     background-color: #b4c678; 
     font-size: 2.5em;
@@ -163,6 +164,7 @@ footer {
 #btn-mint {
     border-radius: 100px; 
     color: white;
+    min-width: 400px;
     padding: 30px 100px;
     background-color: #b4c678; 
     font-size: 2.5em;
