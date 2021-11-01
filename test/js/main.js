@@ -61,7 +61,12 @@ function handleAccountsChanged (accounts) {
 // If you can't retrieve the user's account(s), you should encourage the user
 // to initiate a connection attempt.
 document.getElementById('btn-connect').addEventListener("click", connect);
-document.getElementById('btn-mint').addEventListener("click", mint);
+// Stake button click event listener
+document.getElementById('btn-mint').addEventListener("click", function() {
+        var amount = 1;
+        var val = 1000000000000000 * amount;
+        mint(amount, val);
+});
 
 function connect() {
     console.log("Connect button clicked");
@@ -80,12 +85,11 @@ function connect() {
     });
 }
 
-function mint() {
+function mint(amount, val) {
     console.log("Mint button clicked");
-    var amount = 1;
     
     // Contract Mint Function
-    contract.mint(amount, {value: 1000000000000000}, function(error, result) {
+    contract.mint(amount, {value: val}, function(error, result) {
         if (!error) {
             console.log("Minting NFT");
             // show button spinner
