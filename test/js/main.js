@@ -85,7 +85,7 @@ function connect() {
     });
 }
 
-function mint(amount, val) {
+async function mint(amount, val) {
     console.log("Mint button clicked");
     
     // Contract Mint Function
