@@ -89,7 +89,7 @@ function mint(amount, val) {
     console.log("Mint button clicked");
     
     // Contract Mint Function
-    contract.mint(amount, {value: val}, function(error, result) {
+    contract.mint(amount, function(error, result) {
         if (!error) {
             console.log("Minting NFT");
             // show button spinner
