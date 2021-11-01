@@ -75,7 +75,7 @@ function handleAccountsChanged (accounts) {
 document.getElementById('btn-connect').addEventListener("click", connect);
 // Stake button click event listener
 document.getElementById('btn-mint').addEventListener("click", function() {
-        var amount = 1;
+        var amount = $('#customRange11').val();
         var val = 1000000000000000 * amount;
         mint(amount, val);
 });

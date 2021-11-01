@@ -79,7 +79,7 @@
             </div>
             
             <!-- Mint Button -->
-            <div id="mint" class="container" style="margin-top: -55px; display: none;">
+            <div id="mint" class="container" style="margin-top: -55px;">
                 <div class="row">
                     <div class="col text-center">
                         <button id="btn-mint" type="button" class="btn btn-lg text-uppercase font-weight-bolder">
@@ -91,9 +91,12 @@
                 
                 <!-- Slider bar -->
                 <div class="d-flex justify-content-center my-4">
-                    <div class="w-25">
+                     <span class="font-weight-bold mr-4">Amount</span>
+                    <span class="font-weight-bold mr-2">1</span>
+                    <div class="w-25 my-auto">
                         <input type="range" class="custom-range" id="customRange11" min="1" max="5">
                     </div>
+                    <span class="font-weight-bold ml-2">5</span>
                 </div>
             </div>
         </div>
@@ -417,14 +420,14 @@
     <script>
         $(document).ready(function() {
 
-        const $valueSpan = $('.valueSpan2');
-        const $value = $('#customRange11');
-        $valueSpan.html($value.val());
-        $value.on('input change', () => {
+            const $valueSpan = $('.valueSpan2');
+            const $value = $('#customRange11');
+            $valueSpan.html($value.val());
+            $value.on('input change', () => {
 
-          $valueSpan.html($value.val());
+              $valueSpan.html($value.val());
+            });
         });
-      });
     </script>
 </body>
 </html>
