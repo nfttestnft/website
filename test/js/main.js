@@ -5,6 +5,18 @@ let abi = [ { "anonymous": false, "inputs": [ { "indexed": true, "internalType":
 var contractObj = web3.eth.contract(abi);
 var contract = contractObj.at(address);
 
+// Running on the page, in the browser
+if (typeof window.ethereum !== 'undefined') {
+    console.log('MetaMask is installed!');
+    web3 = new Web3("https://ropsten.infura.io/v3/eec366959e4049cd86441f746e46e03c");
+} else {
+    // get Ethereum Provider
+    console.log('No Web3 Detected... using HTTP Provider');
+    window.web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/eec366959e4049cd86441f746e46e03c"));
+}
+
+
+
 /**********************************************************/
 /* Handle user accounts and accountsChanged, per EIP 1193 */
 /**********************************************************/
