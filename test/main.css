@@ -8,6 +8,7 @@
 @font-face { font-family: old-english-text-mt-regular; src: url('font/OLD.ttf');}
 
 body {
+    background-color: #eee;
 }
 
 nav {
