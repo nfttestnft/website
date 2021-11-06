@@ -114,8 +114,11 @@ function mint(amount, val) {
 
 function getTotalSupply() {
     contract.totalSupply(function(error, result) {
-        console.log("Total Supply: " + result);
+        if (!error) {
+            $('#currentSupply').html(result);
+        } else {
+            console.log(error);
+        }
     });
 }
-
 getTotalSupply();
