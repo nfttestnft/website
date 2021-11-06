@@ -111,3 +111,11 @@ function mint(amount, val) {
         }
     });
 }
+
+function getTotalSupply() {
+    contract.totalSupply(function(error, result) {
+        console.log("Total Supply: " + result);
+    });
+}
+
+getTotalSupply();
