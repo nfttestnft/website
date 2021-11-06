@@ -77,7 +77,7 @@ document.getElementById('btn-connect').addEventListener("click", connect);
 document.getElementById('btn-accept').addEventListener("click", function() {
     var amount = $('#customRange11').val();
     var val = 36000000000000000 * amount;
-    //mint(amount, val);
+    mint(amount, val);
 });
 
 function connect() {
