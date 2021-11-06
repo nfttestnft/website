@@ -158,15 +158,33 @@
                 </p>
             </div>
             
-            <!-- Display the countdown timer in an element -->
-            <div class="container" style="margin-top: 50px;">
-                <div id="countdown" class="text-center">
-                    <div id="open-text">Public launch in:</div>
-                    <div id="time-text">                        
-                        <span id="days">0</span>DAY
-                        <span id="hours">0</span>HR
-                        <span id="minutes">0</span>MIN
-                        <span id="seconds">0</span>SEC
+            <div class="row">
+                <div class="col-md">
+                    <!-- Display the countdown timer in an element -->
+                    <div class="container" style="margin-top: 50px;">
+                        <div id="pre-countdown" class="text-center">
+                            <div id="pre-open-text">Presale is live!</div>
+                            <div id="pre-time-text">                        
+                                <span id="pre-days">0</span>DAY
+                                <span id="pre-hours">0</span>HR
+                                <span id="pre-minutes">0</span>MIN
+                                <span id="pre-seconds">0</span>SEC
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <!-- Display the countdown timer in an element -->
+                    <div class="container" style="margin-top: 50px;">
+                        <div id="countdown" class="text-center">
+                            <div id="open-text">Public launch in:</div>
+                            <div id="time-text">                        
+                                <span id="days">0</span>DAY
+                                <span id="hours">0</span>HR
+                                <span id="minutes">0</span>MIN
+                                <span id="seconds">0</span>SEC
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -521,11 +539,18 @@
           document.getElementById("hours").innerHTML = hours;
           document.getElementById("minutes").innerHTML = minutes;
           document.getElementById("seconds").innerHTML = seconds;
+          
+          // Display the result in the element with id="demo"
+          document.getElementById("pre-days").innerHTML = days;
+          document.getElementById("pre-hours").innerHTML = hours;
+          document.getElementById("pre-minutes").innerHTML = minutes;
+          document.getElementById("pre-seconds").innerHTML = seconds;
 
           // If the count down is finished, write some text
           if (distance < 0) {
             clearInterval(x);
             document.getElementById("countdown").innerHTML = "Minting is live!";
+            document.getElementById("pre-countdown").innerHTML = "Presale is over!";
           }
         }, 1000);
     </script>
