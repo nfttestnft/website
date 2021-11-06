@@ -115,7 +115,8 @@ function mint(amount, val) {
 function getTotalSupply() {
     contract.totalSupply(function(error, result) {
         if (!error) {
-            $('#currentSupply').html(result);
+            var amount = result.toNumber();
+            $('#currentSupply').html(amount);
         } else {
             console.log(error);
         }
