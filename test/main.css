@@ -60,6 +60,10 @@ footer {
     font-size: 1.25em;
 }
 
+.modal-body p {
+    font-size: 1em;
+}
+
 .nav-link {
     color: white;
 }
