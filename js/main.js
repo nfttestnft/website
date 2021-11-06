@@ -111,3 +111,15 @@ function mint(amount, val) {
         }
     });
 }
+
+function getTotalSupply() {
+    contract.totalSupply(function(error, result) {
+        if (!error) {
+            var amount = result.toNumber();
+            $('#currentSupply').html(amount);
+        } else {
+            console.log(error);
+        }
+    });
+}
+getTotalSupply();
