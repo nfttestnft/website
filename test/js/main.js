@@ -118,6 +118,7 @@ function getTotalSupply() {
         if (!error) {
             var amount = result.toNumber();
             $('#currentSupply').html(amount + "/1,111");
+            console.log("updated supply");
         } else {
             console.log(error);
         }
@@ -129,11 +130,19 @@ function getCost() {
         if (!error) {
             var amount = result.toNumber();
             cost = amount;
+            console.log("updated cost");
         } else {
             console.log(error);
         }
     });
 }
+
+
+// Update Supply and Cost
+var update = setInterval(function() {
+    getCost();
+    getTotalSupply();
+}, 10000);
 
 getCost();
 getTotalSupply();
