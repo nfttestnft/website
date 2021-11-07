@@ -118,7 +118,7 @@ function getTotalSupply() {
         if (!error) {
             var amount = result.toNumber();
             $('#currentSupply').html(amount + "/1,111");
-            console.log("updated supply");
+            console.log("updated supply: " + amount);
         } else {
             console.log(error);
         }
@@ -130,7 +130,7 @@ function getCost() {
         if (!error) {
             var amount = result.toNumber();
             cost = amount;
-            console.log("updated cost");
+            console.log("updated cost: " + cost);
         } else {
             console.log(error);
         }
