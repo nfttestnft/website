@@ -171,19 +171,6 @@ footer {
     font-size: 2.5em;
 }
 
-#open-text, #pre-open-text {
-    font-size: 1em;
-}
-
-#time-text, #pre-time-text {
-    font-size: 0.5em;
-}
-
-#days, #hours, #minutes, #seconds, #pre-days, #pre-hours, #pre-minutes, #pre-seconds {
-    font-size: 3em;
-    font-family: old-english-text-mt-regular, sans-serif;
-}
-
-#countdown, #pre-countdown {
+#live {
     font-size: 3em;
 }
