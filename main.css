@@ -153,6 +153,10 @@ footer {
     text-align: justify;
 }
 
+.status {
+    font-size: 1.25em;
+}
+
 #btn-connect {
     border-radius: 100px; 
     color: white;
