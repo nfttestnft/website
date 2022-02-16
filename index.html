@@ -75,12 +75,6 @@
                                   <a class="nav-link" href="#start">Start</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#perks">Perks</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#roadmap">Roadmap</a>
-                                </li>
-                                <li class="nav-item">
                                   <a class="nav-link" href="#team">Team</a>
                                 </li>
                                 <li class="nav-item">
@@ -119,8 +113,17 @@
                 </div>
             </div>
             
+            <!-- Join Button -->
+            <div id="join" class="container" style="margin-top: -55px;">
+                <div class="row">
+                    <div class="col text-center">
+                        <a id="btn-join" href="https://discord.gg/TFtEDamTcC" class="btn btn-lg text-uppercase font-weight-bolder" role="button" target="_blank">We are here</a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Start Button -->
-            <div id="connect" class="container" style="margin-top: -55px;">
+            <div id="connect" class="container" style="margin-top: -55px; display: none;">
                 <div class="row">
                     <div class="col text-center">
                         <button id="btn-connect" type="button" class="btn btn-lg text-uppercase font-weight-bolder">Connect</button>
@@ -151,14 +154,14 @@
             </div>
             
             <div>
-                <p class="text-center mt-4" style="font-weight: bold; font-size: 1.75em;">
+                <p class="text-center mt-4" style="font-weight: bold; font-size: 1.75em; display: none;">
                     Total Orcs minted: 
                     <span id="currentSupply" style="font-family: old-english-text-mt-regular, sans-serif;">.../1,111</span> 
                 </p>
             </div>
             
             <!-- Display the countdown timer in an element -->
-            <div class="container" style="margin-top: 30px;">
+            <div class="container" style="margin-top: 30px; display: none;">
                 <div id="live" class="text-center">Public minting is live!</div>
             </div>
         </div>
@@ -171,12 +174,11 @@
                     <h1 style="color: white;">What are the Orcs of Orakion?</h1>
                     
                     <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 50px;">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WPVk1sXPrbI" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Mxqa9fTlaZs" allowfullscreen></iframe>
                     </div>
                     
                     <p style="color: white;">
-                        The Orcs of Orakion are a collection of programmatically, randomly generated NFTs on the Ethereum blockchain. 
-                        They consist of 1,111 randomly created Orcs with a high resolution of 5000 x 5000 pixel and 500 million possible trait combinations.
+                        The Orcs of Orakion are a collection of programmatically, randomly generated NFTs with a high resolution of 5000 x 5000 pixel and 500 million possible trait combinations.
                         
                     </p>
                     <p style="color: white;">
@@ -187,149 +189,6 @@
             </div>
             
             <img class="img-fluid" src="img/WebsitegroupPic.png" alt="orc group"/>
-        </div>
-    </div>
-    
-    <div id="perks" class="container-fluid" style="background-color: #eee; padding-top: 100px; padding-bottom: 200px;">
-        <div class="container">
-            <h1>One tribe, one adventure!</h1>            
-            <p>
-                The orcs are fleeing the cursed land of Orakion and seek new adventures in an unknown world.
-                Each Orc holder can join our community and experience interactive communtiy events full of
-                wonder, epic tales, Pen & Paper like adventures and loot!
-            </p>
-
-            <button class="btn accordion shadow-none">1. What are Community Events (CE)?</button>
-            <div class="panel">
-                <p>
-                    About every 2 weeks we will hold live CEs in Discord. We will screen a new Episode of our
-                    adventure story with full audio production. The community can decide the turns of the story and
-                    guide the Orcs through their adventure by voting on decisions!
-                </p>
-                <p>
-                    The decisions change the story, impact future storylines and decide whether loot is won or overlooked!
-                </p>
-            </div>
-
-            <button class="btn accordion shadow-none">2. NFT drops</button>
-            <div class="panel">
-                <p>
-                    Being an Orc of Orakion means experiencing a unique adventure together with friends and likeminded
-                    people. We would like to make this adventure even more special by gifting you long lasting
-                    memories in form of NFTs eternalized on the Ethereum Blockchain.
-                </p>
-                <p>
-                    → We plan to have artists illustrate a scene of each Episode/CE and turn it into a limited NFT,
-                    which can be minted by each Orc for free!
-                </p>
-                <p>
-                    → While venturing into the unknown world our Orcs will eventually meet new races. We will create new Avatar NFTs for each race and offer them free to mint (+gas) to all Orc holders: See Roadmap!
-                </p>
-            </div>
-            
-            <button class="btn accordion shadow-none">3. Loot/give-aways</button>
-            <div class="panel">
-                <p>
-                    Members who participate in our CEs can take part in raffles/give-aways and get a chance to win
-                    loot from our treasure chamber in form of NFTs. These can be lost or captured Orcs or NFTs form
-                    other projects that we buy with earnings from our royalties or receive through collaborations!
-                </p>
-            </div>
-            
-            <button class="btn accordion shadow-none">4. Treasure Chamber & Vault</button>
-            <div class="panel">
-                <p>
-                    The treasure chamber is the store for NFTs for give-aways that will be gifted during CEs. We will
-                    fuel it by collaborations and dedicating a certain percentage of our royalties to it.
-                </p>
-                <p>
-                    The Vault: We will use our own funds as well as royalties to rescue Orcs that got lost in the wild as
-                    well as use assets and funds to build a sustainable business.
-                </p>
-            </div>
-            
-            <button class="btn accordion shadow-none">5. Outlook: A fantasy Metaverse</button>
-            <div class="panel">
-                <p>
-                    We plan to build a fantasy world and platform for fantasy fans that is second to none. This will
-                    include fans of art, gaming, boardgames and many more.
-                </p>
-                
-                <div style="padding-left: 30px;">
-                    <h2 style="font-weight: normal;">5.1 NFT-Forge</h2>
-                    <p>Produce our own art collection! This could also enable collaborations with amazing artists or NFT-communities!</p>
-                    
-                    <h2 style="font-weight: normal;">5.2 NFT-Incubator</h2>
-                    <p>
-                        Build a fundraising platform or forum for aspiring artists. Discover new talents and fund your
-                        favorite artist or art-project. Receive personalized perks, NFTs and or a cut of the artists royalties in exchange.
-                    </p>
-                    
-                    <h2 style="font-weight: normal;">5.3 Pen & Paper adventure!</h2>
-                    <p>
-                        We could start an interactive Pen & Paper adventure similar to the adventure/story mode of the Community
-                        Events, but with representatives of the community playing the complex Pen & Paper Events!
-                    </p>
-                </div>
-            </div>
-            
-            <p class="text-center" style="margin-top: 30px;">
-                For more information please visit our Discord!
-            </p>
-        </div>
-    </div>
-    
-    <div id="roadmap" class="container-fluid" style="background-color: #222; color: white; padding-top: 100px; padding-bottom: 200px;">
-        <div class="container p-0">
-            <h1 class="text-center" style="letter-spacing: 0.05em;">Roadmap</h1>
-            
-            <button class="btn accordion-dark shadow-none">1%: Ignition!</button>
-            <div class="panel-dark">
-                <p>We will hold our first CE and will have one hell of a night, with a Campfire, roasted boar and dark ale! (week 1)</p>
-            </div>
-            
-            <button class="btn accordion-dark shadow-none">10%: Dev-package 1: Exploration!</button>
-            <div class="panel-dark">
-                <p class="status">✅  When 1,111 Orcs are Sold!</p>
-                <p>
-                    → 4 Episodes are written and produced as Audio!
-                    </br>
-                    These will be screened during 4 Communtiy events, taking place every 2 weeks, spanning 8 weeks
-                    total. This will constitute the first Chapter of our adventure-story.
-                </p>
-                <p>→ 4 NFTs, one for each Episode, will be illustrated and offered to any Orc to mint as a gift and memory! (week 2-9)</p>
-            </div>
-            
-            <button class="btn accordion-dark shadow-none">25%: Dev-package 2: Reunion!</button>
-            <div class="panel-dark">
-                <p class="status">🛑 Postponed due to reduced Edition size!</p>
-                <p>→ Production of female Orcs starts! The female Orcs went on an important quest & hunting raid and finally made it back to the camp: Free mint gifted to each Orc holder! (Week 2-8)</p>
-                <p>→ An additonal Chapter of our interactive story (4-5 Episodes) can be written and produced! (week 10-17)</p>
-                <p>→ 4-5 NFTs, one for each Episode.</p>
-            </div>
-            
-            <button class="btn accordion-dark shadow-none">50%: Dev-package 3: Expansion!</button>
-            <div class="panel-dark">
-                <p class="status">🛑 Postponed due to reduced Edition size!</p>
-                <p>→ Expansion of the world. A new race is discovered and illustrated! (week 3-10)</p>
-                <p>→ A new, seperate storyline for the race: 1 Chapter of 5 Episodes (week 10-20)</p>
-                <p>→ continuation of the Orc-storyline!</p>
-            </div>
-            
-            <button class="btn accordion-dark shadow-none">75%: Dev-package 3: Pen & Paper!</button>
-            <div class="panel-dark">
-                <p class="status">🛑 Postponed due to reduced Edition size!</p>
-                <p>→ We will build a Team dedicated to bringing you an interactive Pen & Paper adventure for the whole community! (Week 12+)</p>
-                <p>→ continuation of the Orc-storyline & New-race-storyline</p>
-                <p>→ seeking collaborations with artists, fantasy & boardgame communities!</p>
-            </div>
-            
-            <button class="btn accordion-dark shadow-none">100%: Dev-package 3: Deep dive!</button>
-            <div class="panel-dark">
-                <p class="status">🛑 Postponed due to reduced Edition size!</p>
-                <p>We will start working on Project X, an NFT that will not only complement your Orc or other race but also make waves in the community for being the first of its kind! (week X)</p>
-                <p>→ Expand collaborations with fantasy and Pen & Paper communities! (week 2+)</p>
-            </div>
         </div>
     </div>
     
@@ -493,6 +352,7 @@
         }
     </script>
     
+    <!--
     <script>
         $(document).ready(function() {
 
@@ -519,5 +379,6 @@
             });
         });
     </script>
+    -->
 </body>
 </html>
