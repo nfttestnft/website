@@ -157,10 +157,20 @@ footer {
     font-size: 1.25em;
 }
 
+#btn-join {
+    border-radius: 100px; 
+    color: white;
+    padding: 30px 100px;
+    max-width: 500px;
+    background-color: #b4c678; 
+    font-size: 2em;
+}
+
 #btn-connect {
     border-radius: 100px; 
     color: white;
     padding: 30px 100px;
+    max-width: 400px;
     background-color: #b4c678; 
     font-size: 2.5em;
 }
@@ -169,6 +179,7 @@ footer {
     border-radius: 100px; 
     color: white;
     padding: 30px 100px;
+    max-width: 400px;
     background-color: #b4c678; 
     font-size: 2.5em;
 }
