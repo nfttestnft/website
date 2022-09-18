@@ -145,4 +145,3 @@ var update = setInterval(function() {
 }, 10000);
 
 getCost();
-getTotalSupply();
