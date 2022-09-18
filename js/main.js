@@ -117,7 +117,7 @@ function getTotalSupply() {
     contract.totalSupply(function(error, result) {
         if (!error) {
             var amount = result.toNumber();
-            $('#currentSupply').html(amount + "/1,111");
+            $('#currentSupply').html(amount + "/10,101");
             console.log("updated supply: " + amount);
         } else {
             console.log(error);
