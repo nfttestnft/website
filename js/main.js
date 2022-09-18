@@ -78,10 +78,6 @@ document.getElementById('btn-connect').addEventListener("click", connect);
 document.getElementById('btn-accept').addEventListener("click", function() {
     var amount = $('#customRange11').val();
     var val = cost * amount;
-
-    console.log(amount);
-    console.log(val);
-
     mint(amount, val);
 });
 
