@@ -157,7 +157,7 @@ footer {
     font-size: 1.25em;
 }
 
-#btn-join {
+#btn-join, #btn-get {
     border-radius: 100px; 
     color: white;
     padding: 30px 100px;
