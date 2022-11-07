@@ -114,7 +114,7 @@
             </div>
             
             <!-- Join Button -->
-            <div id="join" class="container" style="margin-top: -55px;">
+            <div id="join" class="container" style="margin-top: -55px; display: none;">
                 <div class="row">
                     <div class="col text-center">
                         <a id="btn-join" href="https://discord.gg/TFtEDamTcC" class="btn btn-lg text-uppercase font-weight-bolder" role="button" target="_blank">We are here</a>
@@ -123,7 +123,7 @@
             </div>
 
             <!-- Start Button -->
-            <div id="connect" class="container" style="margin-top: -55px; display: none;">
+            <div id="connect" class="container" style="margin-top: -55px;">
                 <div class="row">
                     <div class="col text-center">
                         <button id="btn-connect" type="button" class="btn btn-lg text-uppercase font-weight-bolder">Connect</button>
@@ -155,10 +155,8 @@
             
             <div>
                 <p class="text-center mt-4" style="font-weight: bold; font-size: 1.75em;">
-                    Minted out! 
-                    <!--
-                        <span id="currentSupply" style="font-family: old-english-text-mt-regular, sans-serif;">.../10,101</span>
-                    --> 
+                    <!-- Minted out! -->
+                    <span id="currentSupply" style="font-family: old-english-text-mt-regular, sans-serif;">.../10,101</span>
                 </p>
             </div>
             
@@ -225,43 +223,8 @@
         </div>
     </div>
     
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/dwarves.js" type="text/javascript"></script>
     
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-    </script>
-    
-    <script>
-        var acc = document.getElementsByClassName("accordion-dark");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active-dark");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-    </script>
-    
-    <!--
     <script>
         $(document).ready(function() {
 
@@ -288,6 +251,5 @@
             });
         });
     </script>
-    -->
 </body>
 </html>
