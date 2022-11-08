@@ -1,5 +1,3 @@
-const { default: Web3 } = require("web3");
-
 let currentAccount = "0x0";
 let cost = 0;
 
