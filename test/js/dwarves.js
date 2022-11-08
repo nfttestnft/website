@@ -169,6 +169,7 @@ function getWhitelistFreeMint() {
         contract.whitelistFree(currentAccount, function(error, result) {
             var amount = result.toNumber();
             freeMints = amount;
+            $('#freeMints').html(freeMints);
             console.log("free mints: " + freeMints);
         });
     }
