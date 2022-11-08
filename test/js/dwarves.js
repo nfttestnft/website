@@ -81,8 +81,7 @@ document.getElementById('btn-connect').addEventListener("click", connect);
 // Stake button click event listener
 document.getElementById('btn-accept').addEventListener("click", function() {
     var amount = $('#customRange11').val();
-    var val = cost * amount;
-    mint(amount, val);
+    mint(amount);
 });
 
 function connect() {
@@ -102,11 +101,13 @@ function connect() {
     });
 }
 
-function mint(amount, val) {
+function mint(amount) {
     console.log("Mint button clicked");
     
     // Public Mint Function
     if (publicMint) {
+        var val = cost * amount;
+
         contract.mint(amount, {value: val}, function(error, result) {
             if (!error) {
                 console.log("Minting NFT");
@@ -117,8 +118,12 @@ function mint(amount, val) {
             }
         });
     } else {
-        val = (amount - freeMints) * (cost * 0.9);
+        var val = 0;
 
+        if (amount - freeMints > 0) {
+            val = (amount - freeMints) * (cost * 0.9);
+        }
+        
         contract.premiumMint(amount, {value: val}, function(error, result) {
             if (!error) {
                 console.log("Minting NFT");
