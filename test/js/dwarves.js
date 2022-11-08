@@ -116,6 +116,8 @@ function mint(amount, val) {
             }
         });
     } else {
+        val = val * 0.9;
+
         contract.premiumMint(amount, {value: val}, function(error, result) {
             if (!error) {
                 console.log("Minting NFT");
