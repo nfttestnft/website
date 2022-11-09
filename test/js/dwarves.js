@@ -121,7 +121,7 @@ function mint(amount) {
         var val = 0;
 
         if (amount - freeMints > 0) {
-            val = (amount - freeMints) * (cost * 0.9);
+            val = (amount - freeMints) * (cost * 0.8);
         }
         
         contract.premiumMint(amount, {value: val}, function(error, result) {
