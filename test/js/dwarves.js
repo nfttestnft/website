@@ -176,6 +176,15 @@ function getWhitelistFreeMint() {
             freeMints = amount;
             $('#freeMints').html(freeMints);
             console.log("free mints: " + freeMints);
+
+            // check the box to mint free NFTs
+            if (freeMints > 0) {
+                $("#freeMintCheck").selected(true);
+                $("#freeMintCheck").attr("disabled", false);
+            } else {
+                $("#freeMintCheck").selected(false);
+                $("#freeMintCheck").attr("disabled", true);
+            }
         });
     }
 }
