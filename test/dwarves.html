@@ -243,6 +243,14 @@
 
               $valueSpan.html($value.val());
             });
+
+            $('#freeMintCheck').change(function() {
+                console.log("checkbox value changed");
+                if(this.checked) {
+                    $value.val(freeMints);
+                    $valueSpan.html($value.val());
+                }
+            });
         });
     </script>
     
