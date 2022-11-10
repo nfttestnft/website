@@ -84,6 +84,14 @@ document.getElementById('btn-accept').addEventListener("click", function() {
     mint(amount);
 });
 
+$(document).ready(function() {
+    $('#freeMintCheck').change(function() {
+        if(this.checked) {
+            $("#customRange11").slider('value', freeMints);
+        }
+    });
+});
+
 function connect() {
     console.log("Connect button clicked");
 
