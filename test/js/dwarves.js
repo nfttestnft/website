@@ -104,34 +104,29 @@ function connect() {
 function mint(amount) {
     console.log("Mint button clicked");
     
-    // Public Mint Function
-    if (publicMint) {
-        var val = cost * amount;
+    let useFreeMint = $('#freeMintCheck').prop('checked');
+
+    if (useFreeMint) {
+        contract.freeMint(amount, function(error, result) {
+            if (!error) {
+                console.log("Minting free NFTs");
+            } else {
+                console.log(error);
+            }
+        });
+    } else {
+        let val = publicMint ? amount * cost : amount * cost * 0.8;
 
         contract.mint(amount, {value: val}, function(error, result) {
             if (!error) {
-                console.log("Minting NFT");
+                console.log("Minting NFTs");
                 // show button spinner
                 //showSpinner('#spinBtnMint');
             } else {
                 console.log(error);
             }
         });
-    } else {
-        var val = 0;
-
-        if (amount - freeMints > 0) {
-            val = (amount - freeMints) * (cost * 0.8);
-        }
-        
-        contract.premiumMint(amount, {value: val}, function(error, result) {
-            if (!error) {
-                console.log("Minting NFT");
-            } else {
-                console.log(error);
-            }
-        });
-    }
+    }      
 }
 
 function getTotalSupply() {
