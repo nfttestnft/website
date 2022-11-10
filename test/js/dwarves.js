@@ -86,6 +86,7 @@ document.getElementById('btn-accept').addEventListener("click", function() {
 
 $(document).ready(function() {
     $('#freeMintCheck').change(function() {
+        console.log("checkbox value changed");
         if(this.checked) {
             $("#customRange11").slider('value', freeMints);
         }
