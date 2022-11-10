@@ -175,10 +175,10 @@ function getWhitelistFreeMint() {
             // check the box to mint free NFTs
             if (freeMints > 0) {
                 $('#freeMintCheck').prop('checked', true);
-                $("#freeMintCheck").prop("disabled", false);
+                //$("#freeMintCheck").prop("disabled", false);
             } else {
                 $('#freeMintCheck').prop('checked', false);
-                $("#freeMintCheck").prop("disabled", true);
+                //$("#freeMintCheck").prop("disabled", true);
             }
         });
     }
