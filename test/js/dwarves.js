@@ -1,6 +1,6 @@
 let currentAccount = "0x0";
 let cost = 5000000000000000;
-let publicMint = false;
+let publicMint = true;
 let freeMints = 0;
 
 let address = "0x45766D04eE4d2f7d126119a8084553f117d05a03";
