@@ -141,7 +141,8 @@ function getCost() {
 // Update Supply and Cost
 var update = setInterval(function() {
     getCost();
-    getTotalSupply();
+    //getTotalSupply();
 }, 10000);
 
 getCost();
+//getTotalSupply();
