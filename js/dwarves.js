@@ -85,6 +85,7 @@ document.getElementById('btn-accept').addEventListener("click", function() {
 });
 
 function connect() {
+    /*
     console.log("Connect button clicked");
 
     ethereum
@@ -99,9 +100,11 @@ function connect() {
         console.error(err);
       }
     });
+    */
 }
 
 function mint(amount) {
+    /*
     console.log("Mint button clicked");
     
     let useFreeMint = $('#freeMintCheck').prop('checked');
@@ -126,7 +129,8 @@ function mint(amount) {
                 console.log(error);
             }
         });
-    }      
+    }
+    */     
 }
 
 function getTotalSupply() {
