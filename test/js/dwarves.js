@@ -156,7 +156,9 @@ function getPaused() {
 var update = setInterval(function() {
     getCost();
     getTotalSupply();
+    getPaused();
 }, 10000);
 
 getCost();
 getTotalSupply();
+getPaused();
