@@ -153,7 +153,7 @@ function getPaused() {
 
 
 // Update Supply and Cost
-var update = setInterval(function() {
+/*var update = setInterval(function() {
     getCost();
     getTotalSupply();
     getPaused();
@@ -162,3 +162,4 @@ var update = setInterval(function() {
 getCost();
 getTotalSupply();
 getPaused();
+*/
