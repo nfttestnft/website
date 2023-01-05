@@ -51,16 +51,16 @@ function handleAccountsChanged (accounts) {
         currentAccount = "0x0";
         
         // show connect button
-        $('#mint').hide();
-        $('#connect').show();
+        //$('#mint').hide();
+        //$('#connect').show();
     } else if (accounts[0] !== currentAccount) {
         currentAccount = accounts[0];
         // Run any other necessary logic...
         console.log("New Address: " + currentAccount);
         
         // show minting button
-        $('#connect').hide();
-        $('#mint').show();
+        //$('#connect').hide();
+        //$('#mint').show();
     } else {		
     }
 }  
@@ -153,7 +153,7 @@ function getPaused() {
 
 
 // Update Supply and Cost
-var update = setInterval(function() {
+/*var update = setInterval(function() {
     getCost();
     getTotalSupply();
     getPaused();
@@ -162,3 +162,4 @@ var update = setInterval(function() {
 getCost();
 getTotalSupply();
 getPaused();
+*/
